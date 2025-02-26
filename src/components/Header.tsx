@@ -56,7 +56,7 @@ function Header() {
                 >
                     <div className='flex flex-col items-center gap-2'>
                         <NavLink onClick={toggle} to='/' className={'w-full p-1 rounded-lg text-2xl font-semibold text-center'}>Portfolio</NavLink>
-                        <NavLink onClick={toggle} to='/all-project' className='text-2xl font-semibold'>All Project</NavLink>
+                        <NavLink onClick={toggle} to='/all-projects' className='text-2xl font-semibold'>All Project</NavLink>
                         <NavLink onClick={toggle} to='https://nhbt-photography.vercel.app' className='text-2xl font-semibold'>Photography</NavLink>
                     </div>
                 </Drawer>
