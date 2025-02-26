@@ -1,4 +1,4 @@
-import {Burger, Button, Drawer} from "@mantine/core"
+    import {Burger, Button, Drawer} from "@mantine/core"
 import {useDisclosure} from "@mantine/hooks"
 import {NavLink} from 'react-router-dom'
 import {Icon} from "@iconify/react/dist/iconify.js"
@@ -10,7 +10,7 @@ function Header() {
         <header className="w-full h-20 py-3 px-4 fixed top-0 z-30">
             <div
                 className='container motion-preset-focus h-full px-3 flex justify-between items-center border border-gray-600 rounded-lg transition duration-200 backdrop-blur-xl shadow-sm'>
-                <div className="">
+                <div className="w-20">
                     <Icon fontSize={34} className='text-purple-500' icon="material-symbols:code-blocks" />
                 </div>
 
@@ -28,10 +28,18 @@ function Header() {
                     >
                         Project
                     </NavLink>
+
+                    <NavLink
+                        to='https://nhbt-photography.vercel.app'
+                        className={({ isActive }) => `${isActive ? `text-purple-500` : ''} font-semibold`}
+                        target="_blank"
+                    >
+                        <span className="opacity-50 cursor-not-allowed">Photography</span>
+                    </NavLink>
                 </div>
 
-                <div className="hidden sm:flex gap-5">
-                    <Button>Login</Button>
+                <div className="hidden sm:flex gap-5 w-20">
+                    <Button disabled>[Bug]</Button>
                 </div>
 
                 <Burger opened={opened} onClick={toggle} aria-label="Toggle navigation" className='sm:hidden'/>
