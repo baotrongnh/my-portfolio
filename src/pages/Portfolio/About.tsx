@@ -1,12 +1,12 @@
-import {Button, Image, Text, useMantineTheme} from '@mantine/core'
+import { Button, Image, Text, useMantineTheme } from '@mantine/core'
 import avatar2 from './../../assets/photo/avatar-2.jpg'
-import {Icon} from "@iconify/react/dist/iconify.js"
+import { Icon } from "@iconify/react/dist/iconify.js"
 import cvPdf from '../../assets/pdf/NguyenHuynhBaoTrong_CV.pdf'
-import {useAppContext} from "../../hooks/contextHook.tsx"
+import { useAppContext } from "../../hooks/contextHook.tsx"
 
 export default function About() {
     const theme = useMantineTheme()
-    const {myInformation} = useAppContext()
+    const { myInformation } = useAppContext()
     console.log(myInformation)
 
     return (
@@ -47,7 +47,7 @@ export default function About() {
 
                             <div className='mt-5'>
                                 <a href={cvPdf} download='CV_NguyenHuynhBaoTrong'>
-                                    <Button leftSection={<Icon fontSize={16} icon="material-symbols:download"/>}>
+                                    <Button leftSection={<Icon fontSize={16} icon="material-symbols:download" />}>
                                         Download CV
                                     </Button>
                                 </a>
